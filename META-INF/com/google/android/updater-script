@@ -1,0 +1,16 @@
+assert(getprop("ro.product.device") == "joyeuse" || getprop("ro.build.product") == "joyeuse" || 
+       getprop("ro.product.device") == "gram" || getprop("ro.build.product") == "gram" || 
+       getprop("ro.product.device") == "curtana" || getprop("ro.build.product") == "curtana" || 
+       getprop("ro.product.device") == "excalibur" || getprop("ro.build.product") == "excalibur" || abort("E3004: This package is for device: joyeuse,gram,curtana,excalibur; this device is " + getprop("ro.product.device") + "."););
+ui_print("Target: Redmi/twrp_miatoll/miatoll:10/QD4A.200905.003/root10311705:userdebug/release-keys");
+ui_print(" ");
+ui_print("               THANK YOU FOR FLASHING        ");
+ui_print("                   TWRP recovery             ");
+ui_print("                for Redmi Note 9S/Pro        ");
+ui_print("                  --- MIATOLL ---            ");
+ui_print(" ");
+ui_print("Flashing Recovery Image...");
+package_extract_file("recovery.img", "/dev/block/bootdevice/by-name/recovery");
+ui_print("All done");
+show_progress(0.200000, 10);
+set_progress(1.000000);
