@@ -56,7 +56,7 @@ case $project in
         load_gram
         ;;
     *)
-        load_curtana
+        load_joyeuse
         ;;
 esac
 

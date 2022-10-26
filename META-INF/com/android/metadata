@@ -1,9 +1,5 @@
-ota-property-files=metadata:69:354,metadata.pb:491:260                 
 ota-required-cache=0
 ota-type=BLOCK
-post-build=google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys
-post-build-incremental=eng.root.20220921.134920
-post-sdk-level=32
-post-security-patch-level=2022-09-05
-post-timestamp=1663742656
-pre-device=curtana,excalibur,gram,joyeuse
+post-build=Xiaomi/hydrogen/hydrogen:6.0.1/MMB29M/V8.2.1.0.MHOCNDL:user/release-keys
+post-timestamp=1500881719
+pre-device=hydrogen
