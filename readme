@@ -1,1 +1,12 @@
 TWRP for curtana, joyeuse,gram, excalibur
+
+Command:
+export ALLOW_MISSING_DEPENDENCIES=true
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx12g"
+export USE_CCACHE=1
+export LC_ALL=C
+
+export FBEVERSION=v1 #
+. build/envsetup.sh
+lunch twrp_joyeuse-eng
+mka -j8 recoveryimage
