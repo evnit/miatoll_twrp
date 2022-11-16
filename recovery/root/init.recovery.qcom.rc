@@ -73,11 +73,9 @@ service hvdcp_opti /system/bin/hvdcp_opti
     setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
     seclabel u:r:recovery:s0
 
-on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
+on boot
     chmod 0777 /system/bin/10or11.sh
     start 10or11
-
-on boot
     chmod 0777 /system/bin/unified-script.sh
     start unified-script
     start resetdate
